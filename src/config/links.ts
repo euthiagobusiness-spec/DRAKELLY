@@ -52,7 +52,8 @@ export const developerLinks = {
   role: "Desenvolvido por",
   image: "/assets/thiago-carvalho.webp",
   instagramHandle: "@thiagocarvalho.dev",
-  instagramUrl: "https://www.instagram.com/thiagocarvalho.dev",
+  instagramUrl:
+    "https://www.instagram.com/thiagocarvalho.dev?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   email: "euthiagobusiness@gmail.com",
   emailUrl: "mailto:euthiagobusiness@gmail.com",
 };

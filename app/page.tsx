@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
-  AtSign,
   BookOpen,
   CalendarCheck,
   ChevronRight,
@@ -596,7 +595,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     aria-label={`Abrir Instagram ${developerLinks.instagramHandle}`}
                   >
-                    <AtSign className="size-4" strokeWidth={iconStroke} aria-hidden="true" />
+                    <span className="developer-instagram-icon" aria-hidden="true" />
                     <span>{developerLinks.instagramHandle}</span>
                   </a>
                   <a
