@@ -50,6 +50,7 @@ export const ctaLinks = {
 export const developerLinks = {
   name: "Thiago Carvalho",
   role: "Desenvolvido por",
+  image: "/assets/thiago-carvalho.webp",
   instagramHandle: "@thiagocarvalho.dev",
   instagramUrl: "https://www.instagram.com/thiagocarvalho.dev",
   email: "euthiagobusiness@gmail.com",

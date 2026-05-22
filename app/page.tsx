@@ -575,19 +575,20 @@ export default function Home() {
             </span>
             <p>Dra. Kelly Ferraz / Renoova Medicina Estética</p>
           </div>
-          <div className="developer-card motion-surface reveal-surface">
-            <p className="text-xs font-semibold tracking-[0.28em] text-[var(--champagne)] uppercase">
+          <div
+            className="developer-card motion-surface reveal-surface"
+            style={{ "--developer-image": `url(${developerLinks.image})` } as React.CSSProperties}
+          >
+            <p className="text-[0.68rem] font-semibold tracking-[0.24em] text-[var(--champagne)] uppercase">
               {developerLinks.role}
             </p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-[auto_1fr] sm:items-center">
-              <div className="developer-avatar" aria-hidden="true">
-                TC
-              </div>
+            <div className="mt-4 grid gap-3 sm:grid-cols-[auto_1fr] sm:items-center">
+              <div className="developer-avatar" aria-hidden="true" />
               <div>
-                <p className="text-2xl leading-tight font-serif text-white">
+                <p className="text-xl leading-tight font-serif text-white">
                   {developerLinks.name}
                 </p>
-                <div className="mt-4 grid gap-3">
+                <div className="mt-3 grid gap-2">
                   <a
                     href={developerLinks.instagramUrl}
                     className="developer-pill"
