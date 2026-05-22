@@ -344,9 +344,19 @@ export default function Home() {
               className="h-auto w-64 object-contain md:w-80"
             />
             <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(180deg,transparent,rgba(14,11,10,0.66))]" />
-            <p className="relative mt-12 max-w-md text-2xl leading-snug font-serif md:mt-16">
-              Uma marca médica construída entre precisão clínica e sensibilidade estética.
-            </p>
+            <div className="brand-statement mt-12 w-full max-w-md md:mt-16">
+              <span className="grid size-11 shrink-0 place-items-center rounded-full border border-[rgba(217,195,154,0.42)] bg-[rgba(217,195,154,0.1)]">
+                <FineIcon icon={Microscope} className="size-5 text-[var(--champagne)]" />
+              </span>
+              <div>
+                <p className="text-xs font-semibold tracking-[0.22em] text-[var(--champagne)] uppercase">
+                  Assinatura médica
+                </p>
+                <p className="mt-2 text-xl leading-snug font-serif text-white md:text-2xl">
+                  Precisão clínica, sensibilidade estética e naturalidade em cada detalhe.
+                </p>
+              </div>
+            </div>
             <div className="brand-seal mt-auto w-full max-w-md">
               <span className="grid size-10 shrink-0 place-items-center rounded-full border border-[rgba(217,195,154,0.34)] bg-white/8">
                 <FineIcon icon={Sparkles} className="size-5 text-[var(--champagne)]" />
@@ -525,7 +535,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-[1fr_0.55fr] md:items-end md:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold tracking-[0.24em] text-white/82 uppercase">
-              CTA final para WhatsApp
+              Fale conosco
             </p>
             <h2 className="mt-5 text-4xl leading-tight font-medium tracking-normal md:text-6xl">
               Agende sua avaliação com a equipe da Dra. Kelly Ferraz.
