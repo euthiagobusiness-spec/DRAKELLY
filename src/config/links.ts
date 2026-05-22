@@ -46,3 +46,12 @@ export const ctaLinks = {
     href: siteLinks.books,
   },
 };
+
+export const developerLinks = {
+  name: "Thiago Carvalho",
+  role: "Desenvolvido por",
+  instagramHandle: "@thiagocarvalho.dev",
+  instagramUrl: "https://www.instagram.com/thiagocarvalho.dev",
+  email: "euthiagobusiness@gmail.com",
+  emailUrl: "mailto:euthiagobusiness@gmail.com",
+};

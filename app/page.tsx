@@ -3,11 +3,13 @@ import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
+  AtSign,
   BookOpen,
   CalendarCheck,
   ChevronRight,
   GraduationCap,
   Landmark,
+  Mail,
   MapPin,
   MessageCircle,
   Microscope,
@@ -18,7 +20,7 @@ import {
   Syringe,
 } from "lucide-react";
 import { MotionRuntime } from "./components/MotionRuntime";
-import { ctaLinks, navLinks, siteLinks } from "../src/config/links";
+import { ctaLinks, developerLinks, navLinks, siteLinks } from "../src/config/links";
 
 type ActionProps = {
   href: string;
@@ -560,7 +562,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 bg-[var(--ink)] px-5 py-8 text-white md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-sm text-white/64 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto grid max-w-7xl gap-8 text-sm text-white/64 lg:grid-cols-[1fr_auto] lg:items-center">
           <div className="flex items-center gap-4">
             <span className="flex h-20 items-center">
               <Image
@@ -573,7 +575,42 @@ export default function Home() {
             </span>
             <p>Dra. Kelly Ferraz / Renoova Medicina Estética</p>
           </div>
-          <nav className="flex flex-wrap gap-5" aria-label="Links legais">
+          <div className="developer-card motion-surface reveal-surface">
+            <p className="text-xs font-semibold tracking-[0.28em] text-[var(--champagne)] uppercase">
+              {developerLinks.role}
+            </p>
+            <div className="mt-5 grid gap-4 sm:grid-cols-[auto_1fr] sm:items-center">
+              <div className="developer-avatar" aria-hidden="true">
+                TC
+              </div>
+              <div>
+                <p className="text-2xl leading-tight font-serif text-white">
+                  {developerLinks.name}
+                </p>
+                <div className="mt-4 grid gap-3">
+                  <a
+                    href={developerLinks.instagramUrl}
+                    className="developer-pill"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Abrir Instagram ${developerLinks.instagramHandle}`}
+                  >
+                    <AtSign className="size-4" strokeWidth={iconStroke} aria-hidden="true" />
+                    <span>{developerLinks.instagramHandle}</span>
+                  </a>
+                  <a
+                    href={developerLinks.emailUrl}
+                    className="developer-pill"
+                    aria-label={`Enviar email para ${developerLinks.email}`}
+                  >
+                    <Mail className="size-4" strokeWidth={iconStroke} aria-hidden="true" />
+                    <span>{developerLinks.email}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav className="flex flex-wrap gap-5 lg:col-span-2" aria-label="Links legais">
             <Link href={siteLinks.privacy} className="nav-link">
               Política de Privacidade
             </Link>
